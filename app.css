@@ -377,3 +377,31 @@ header {
   background: #2a2a2a;
   border: none;
 }
+
+
+/* mobile mode */
+@media (max-width: 768px) {
+  header {
+    height: 56px;
+    padding: 0 0.5rem;
+  }
+
+  .group-1 {
+    width: auto;
+    gap: 0.5rem;
+  }
+
+  .group-2 {
+    display: none; /* hide search bar on mobile */
+  }
+
+  .group-3 {
+    width: auto;
+    gap: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .side-menu {
+    display: none; /* hide sidebar on mobile */
+  }
+}
