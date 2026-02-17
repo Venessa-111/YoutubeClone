@@ -390,6 +390,24 @@
           container.appendChild(skeleton);
         }
       }
+
+       // Side-popu script
+      const navMenuBtn = document.querySelector(".nav-menu");
+      const sidePopup = document.querySelector(".side-popup");
+
+      navMenuBtn.addEventListener("click", () => {
+        sidePopup.classList.add("open");
+      });
+
+      // close the popup when clicking outside of it or on the close button
+      sidePopup.addEventListener("click", (e) => {
+        if (
+          e.target.classList.contains("side-popup") ||
+          e.target.classList.contains("close-btn")
+        ) {
+          sidePopup.classList.remove("open");
+        }
+      });
     </script>
   </body>
 </html>
